@@ -3,7 +3,6 @@ package damas.views.console.menus;
 import damas.controllers.StartController;
 import utils.Menu;
 
-
 public class StartMenu extends Menu {
     
     public StartMenu(StartController startController) {

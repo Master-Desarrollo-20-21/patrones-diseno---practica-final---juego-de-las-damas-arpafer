@@ -11,10 +11,7 @@ public class BoardView {
     private String BLACK_PAWN = " n ";
     private String BLACK_QUEEN = " N ";
     private String EMPTY = "   ";
-
-    public BoardView() {
-    }
-
+   
     public void interact(PlayController playController) {
 
         int numberAtMargin = 8;

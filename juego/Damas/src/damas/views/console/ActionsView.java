@@ -5,11 +5,7 @@ import damas.controllers.PlayController;
 import utils.Console;
 
 public class ActionsView {
-                
-    public ActionsView() {
-    
-    }
-
+                    
     public void interact(PlayController playController) {
                 
         Console.getInstance().writeln();                

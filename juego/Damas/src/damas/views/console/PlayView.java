@@ -5,11 +5,7 @@ import damas.controllers.PlayController;
 import damas.views.View;
 
 class PlayView extends View {
-        
-    public PlayView() {
-      
-    }
-    
+                
     @Override
     public void interact(AcceptorController playController) {
         new BoardView().interact((PlayController) playController);

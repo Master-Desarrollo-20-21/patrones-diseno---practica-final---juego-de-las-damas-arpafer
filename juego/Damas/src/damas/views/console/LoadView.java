@@ -7,11 +7,7 @@ import damas.views.View;
 import utils.Console;
 
 public class LoadView extends View {
-
-    public LoadView() {
-        
-    }
-    
+   
     @Override
     public void interact(AcceptorController controller) {
         Console.getInstance().writeln();

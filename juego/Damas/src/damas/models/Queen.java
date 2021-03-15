@@ -2,8 +2,8 @@ package damas.models;
 
 public class Queen extends Token {
 
-    private static int ROW_INVALID = 100;
-    private static int COLUMN_INVALID = 100;
+    private static int ROW_INVALID = -1;
+    private static int COLUMN_INVALID = -1;
 
     public Queen(Color color) {
         super(color);

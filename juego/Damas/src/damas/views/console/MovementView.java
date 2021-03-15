@@ -32,18 +32,15 @@ public class MovementView {
             if (playController.canDoneMovement(new String[]{this.getRow(initialCell), this.getColumn(initialCell), this.getRow(targetCell), this.getColumn(targetCell)})) {
                 playController.move();
                 new BoardView().interact(playController);
+                initialCell = targetCell;
             } else {
                 ilegalMovement = true;
                 Console.getInstance().writeln(Message.ILEGAL_MOVEMENT.toString() + " at (" + initialCell + targetCell + ")");
-            }
-            if (ilegalMovement) {
-                movements = this.introCoordinates();
+                 movements = this.introCoordinates();
                 movementIndex = 0;
                 initialCell = "";
                 ilegalMovement = false;
-            } else {
-                initialCell = targetCell;
-            }
+            }            
         }
         playController.nextTurn();
         Console.getInstance().writeln();

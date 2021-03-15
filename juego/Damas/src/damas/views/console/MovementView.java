@@ -17,42 +17,47 @@ public class MovementView {
     }
 
     public void interact(PlayController playController) {
-        this.showTurn(playController);        
-        String movements = Console.getInstance().readString(Message.INTRO_COORDINATES.toString());
+        this.showTurn(playController);
+        String movements = this.introCoordinates();
         boolean ilegalMovement = false;
         int movementIndex = 0;
         String initialCell = "", targetCell = "";
-        if (this.validSintaxisCoordinates(movements)) {
-            while (movementIndex < movements.length()) {
-                if (movementIndex == 0) {
-                    initialCell = this.getNextCell(movements, movementIndex);
-                    movementIndex += 2;
-                }
-                targetCell = this.getNextCell(movements, movementIndex);
+        while (movementIndex < movements.length()) {
+            if (movementIndex == 0) {
+                initialCell = this.getNextCell(movements, movementIndex);
                 movementIndex += 2;
-                if (playController.canDoneMovement(new String[]{this.getRow(initialCell), this.getColumn(initialCell), this.getRow(targetCell), this.getColumn(targetCell)})) {
-                    playController.move();
-                    new BoardView().interact(playController);
-                } else {
-                    ilegalMovement = true;
-                    Console.getInstance().writeln(Message.ILEGAL_MOVEMENT.toString() + " at (" + initialCell + targetCell + ")");
-                }                
-                if (ilegalMovement) {
-                    do {
-                        movements = Console.getInstance().readString(Message.INTRO_COORDINATES.toString());
-                    } while (!this.validSintaxisCoordinates(movements));
-                    movementIndex = 0;
-                    initialCell = "";
-                    ilegalMovement = false;
-                } else {
-                    initialCell = targetCell;
-                }
             }
-            playController.nextTurn();
-        } else {
-            Console.getInstance().writeln(Message.ERROR_COORDINATES.toString());
+            targetCell = this.getNextCell(movements, movementIndex);
+            movementIndex += 2;
+            if (playController.canDoneMovement(new String[]{this.getRow(initialCell), this.getColumn(initialCell), this.getRow(targetCell), this.getColumn(targetCell)})) {
+                playController.move();
+                new BoardView().interact(playController);
+            } else {
+                ilegalMovement = true;
+                Console.getInstance().writeln(Message.ILEGAL_MOVEMENT.toString() + " at (" + initialCell + targetCell + ")");
+            }
+            if (ilegalMovement) {
+                movements = this.introCoordinates();
+                movementIndex = 0;
+                initialCell = "";
+                ilegalMovement = false;
+            } else {
+                initialCell = targetCell;
+            }
         }
+        playController.nextTurn();
         Console.getInstance().writeln();
+    }
+
+    private String introCoordinates() {
+        String movements = "";
+        do {
+            movements = Console.getInstance().readString(Message.INTRO_COORDINATES.toString());
+            if (!this.validSintaxisCoordinates(movements)) {
+                Console.getInstance().writeln(Message.ERROR_COORDINATES.toString());
+            }
+        } while (!this.validSintaxisCoordinates(movements));
+        return movements;
     }
 
     private void showTurn(PlayController playController) {

@@ -13,6 +13,7 @@
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/BoardView.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/ActionsView.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/SessionImplementation.java</file>
+            <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/Movement.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/SaveCommand.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/menus/Command.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/MovementView.java</file>
@@ -21,6 +22,7 @@
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/LoadCommand.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/Game.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/UndoCommand.java</file>
+            <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/Damas.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/PlayCommand.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/Token.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/RespondYesNoView.java</file>
@@ -29,6 +31,7 @@
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/StartView.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/ExitCommand.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/views/console/menus/ExitOrResumeCommand.java</file>
+            <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/Pawn.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/utils/Console.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/Session.java</file>
             <file>file:/C:/Users/Antonio/Documents/escuelait/patrones-de-diseño/practica_final_damas/patrones-diseno---practica-final---juego-de-las-damas-arpafer/juego/Damas/src/damas/models/TurnValues.java</file>

@@ -111,9 +111,9 @@ public class Cell {
         return this.token.canCapture(movement, board);
     }
 
-    boolean canCaptureFrom(Board board) {
-        return this.token.couldCaptureFrom(this, board);
-    }        
+  /*  boolean canCaptureFrom(Board board) {
+         return this.token.couldCaptureFrom(this, board);
+    }         */
 
     public boolean isTokenPawn() {
         if (this.token != null) {

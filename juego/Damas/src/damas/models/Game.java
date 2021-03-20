@@ -65,9 +65,9 @@ public class Game {
         return this.turn.hasCaptured();
     }
 
-    public boolean canCaptureAgain(String[] coordinate) {        
+   /* public boolean canCaptureAgain(String[] coordinate) {        
         return this.board.canCaptureFrom(coordinate, this.turn);        
-    }       
+    } */       
 
     public boolean isPawn(int row, int col) {
         return this.board.isPawn(row, col);
